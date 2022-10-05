@@ -12,7 +12,8 @@ JIVO_BOT = int(os.getenv("JIVO_BOT"))
 api_id = str(os.getenv("APP_ID"))
 api_hash = str(os.getenv("API_HASH"))
 
-app = Client("my_account", api_id, api_hash)
+proxy = {"scheme": "http", "host": "192.168.152.200", "port": 8080}
+app = Client("my_account", api_id, api_hash, proxy=proxy)
 
 
 def extract_message_id(text):
