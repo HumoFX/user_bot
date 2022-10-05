@@ -53,4 +53,4 @@ async def main():
             print(dialog.chat.title or dialog.chat.first_name, dialog.chat.id)
 
 
-app.run(main())
+app.run()
